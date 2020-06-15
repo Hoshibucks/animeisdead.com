@@ -1,0 +1,7 @@
+# Ignore installed NPM modules
+node_modules
+
+# Ignore the output folder
+dist
+
+package-lock.json

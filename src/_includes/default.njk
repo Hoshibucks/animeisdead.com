@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% set css %}
+    {% include "css/screen.css" %}
+  {% endset %}
+
+  <style>{{ css | cssmin | safe }}</style>
+
+</head>
+<body class="dspflx juscen">
+
+  <main class="dspflx flocol jusspb" id="wrapper">
+
+    <header class="container">
+      <div class="dspflx flocol juscen">
+        <div class="dspflx florow juscen">
+          <h1>{{ title }}</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="dspflx flocol juscen">
+        <div class="dspflx florow juscen">
+          <div class="content">
+            <div class="message">
+              {{ content | safe }}
+            </div>
+            <div class="buttons dspflx florow juscen">
+              <span class="container">
+                <a href="https://ko-fi.com/hoshibucks">
+                  <button class="ko-fi">
+                    Donate
+                  </button>
+                </a>
+              </span>
+              <span class="container">
+                <a href="https://stream.animeisdead.com/">
+                  <button class="stream">
+                    Enter
+                  </button>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+      <div class="dspflx flocol juscen">
+        <div class="dspflx florow juscen">
+          <span>© Hoshibucks</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>

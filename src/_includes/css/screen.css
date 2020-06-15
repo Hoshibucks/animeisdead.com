@@ -1,0 +1,214 @@
+@import url("https://use.typekit.net/spk6pdk.css");
+
+html {
+  /* Sizing */
+  --measure: 70ch;
+  --s-5: 0.33rem;
+  --s-4: 0.5rem;
+  --s-3: 0.625rem;
+  --s-2: 0.75rem;
+  --s-1: 0.875rem;
+  --s0: 1rem;
+  --s1: 1.25rem;
+  --s2: 1.5rem;
+  --s3: 1.75rem;
+  --s4: 2rem;
+  --s5: 2.5rem;
+
+  /* Fonts */
+  --font-sans-serif: source-sans-pro, sans-serif;
+  --font-heading: futura-pt-bold, sans-serif;
+  --font-ui: futura-pt, sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  font-family: var(--font-sans-serif);
+}
+
+header,
+footer {
+  margin-top: var(--s0);
+  margin-bottom: var(--s0);
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: calc(var(--s0) / 3);
+  margin: 0;
+  padding: var(--s-2) var(--s0);
+  font-size: var(--s0);
+  line-height: 1;
+  background: transparent;
+  -webkit-appearance: none;
+  box-shadow: 
+    0 4px 6px rgba(50,50,93,.11),
+    0 1px 3px rgba(0,0,0,.08);
+}
+
+button:hover,
+button:focus {
+  transform: translateY(-1px);
+  box-shadow:
+    0 7px 14px rgba(50,50,93,.1),
+    0 3px 6px rgba(0,0,0,.08);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 6px 12px -2px rgba(50,50,93,.25),
+    0 3px 7px -3px rgba(0,0,0,.3);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+.ui {
+  font-family: var(--font-ui);
+}
+
+/* Sets the container and created a padding on the left and right sides of the container class */
+.container {
+  margin-left: calc(var(--s0) / 2);
+  margin-right: calc(var(--s0) / 2);
+}
+
+.dspflx {
+  display: flex;
+}
+
+.florow {
+  flex-flow: row wrap;
+}
+
+.flocol {
+  flex-flow: column wrap;
+}
+
+.juscen {
+  justify-content: center;
+}
+
+.jusspb {
+  justify-content: space-between;
+}
+
+.content {
+  margin: calc(var(--s0) / 2);
+}
+
+.content > * + * {
+  margin-top: var(--s2);
+}
+
+.message > * + * {
+  margin-top: var(--s1);
+}
+
+.ko-fi,
+.stream {
+  font-size: var(--s1);
+  color: #FFFFFF;
+}
+
+.ko-fi {
+  background: #29ABE0;
+}
+
+.stream {
+  background: #E08928;
+}
