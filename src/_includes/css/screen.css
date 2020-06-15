@@ -92,6 +92,11 @@ ol[class] {
   list-style: none;
 }
 
+/* A elements with a class get no decoration */
+a[class] {
+  text-decoration: none;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;

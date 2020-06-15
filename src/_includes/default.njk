@@ -19,7 +19,9 @@
     <header class="container">
       <div class="dspflx flocol juscen">
         <div class="dspflx florow juscen">
-          <h1>{{ title }}</h1>
+          <a class="home" href="/">
+            <h1>{{ title }}</h1>
+          </a>
         </div>
       </div>
     </header>
@@ -28,8 +30,8 @@
       <div class="dspflx flocol juscen">
         <div class="dspflx florow juscen">
           <div class="content">
-            <div class="mascot">
-              <img src="assets/img/hoshibucks.png" alt="The Hoshibucks mascot"/>
+            <div class="mascot dspflx flowrow juscen">
+              <img src="assets/img/mascot.png" alt="The Hoshibucks mascot"/>
             </div>
             <div class="message">
               {{ content | safe }}
