@@ -26,6 +26,7 @@ html {
   --text: #333;
   --ko-fi: #29ABE0;
   --donate: #E08928;
+  --contact: #2082F7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -233,7 +234,8 @@ button,
 }
 
 .ko-fi,
-.stream {
+.stream,
+.contact {
   font-size: var(--s1);
   color: #FFFFFF;
 }
@@ -244,4 +246,8 @@ button,
 
 .stream {
   background: var(--donate);
+}
+
+.contact {
+  background: var(--contact);
 }
