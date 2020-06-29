@@ -26,7 +26,7 @@ html {
   --text: #333;
   --ko-fi: #29ABE0;
   --donate: #E08928;
-  --contact: #2082F7;
+  --discord: #7289DA;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -248,6 +248,6 @@ button,
   background: var(--donate);
 }
 
-.contact {
-  background: var(--contact);
+.discord {
+  background: var(--discord);
 }
