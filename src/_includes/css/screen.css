@@ -147,7 +147,7 @@ button {
   line-height: 1;
   background: transparent;
   -webkit-appearance: none;
-  box-shadow: 
+  box-shadow:
     0 4px 6px rgba(50,50,93,.11),
     0 1px 3px rgba(0,0,0,.08);
   transition: all 0.25s ease;
@@ -251,4 +251,12 @@ button,
 
 .discord {
   background: var(--discord);
+}
+
+.notice {
+  background: #FAA19B;
+  color: #992A22;
+  border: 1px solid #7A221B;
+  border-radius: calc(var(--s0) / 3);
+  padding: var(--s0);
 }
